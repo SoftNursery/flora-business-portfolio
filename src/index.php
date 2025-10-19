@@ -21,6 +21,10 @@ route('/blog', function () {
     include __DIR__ . '/pages/blog-page.php';
 });
 
+route('/blog/{slug}', function () {
+    include __DIR__ . '/pages/blog-details.php';
+});
+
 route('/cart', function () {
     include __DIR__ . '/pages/cart-page.php';
 });

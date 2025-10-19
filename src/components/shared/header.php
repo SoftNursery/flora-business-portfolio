@@ -1,13 +1,14 @@
 <?php
 $show = isset($_GET['show']) ? $_GET['show'] === 'true' : false;
 include 'Button.php';
+$logo = '/../../assets/2.png';
 ?>
 
 <header class="fixed top-0 left-0 bg-primary text-lightGrey z-50 shadow-md w-full font-semibold">
     <nav class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             <a href="/">
-                <img src='assets/2.png' alt="Flora Glass World Logo" class="h-12 cursor-pointer" />
+                <img src="<?= $logo ?>" alt="Flora Glass World Logo" class="h-12 cursor-pointer" />
             </a>
             <ul class="hidden md:flex items-center space-x-8 text-lg">
                 <li><a href="/" class="nav-link">Home</a></li>

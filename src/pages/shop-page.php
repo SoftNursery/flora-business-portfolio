@@ -55,7 +55,8 @@ $currentCategory = array_values(array_filter($categories, fn($cat) => $cat['valu
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Glass World</title>
     <link href="output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -66,7 +67,7 @@ $currentCategory = array_values(array_filter($categories, fn($cat) => $cat['valu
 <body class="">
     <?php include __DIR__ . '/../components/shared/header.php'; ?>
     <main>
-        <div class="min-h-screen bg-gray-100 mt-20">
+        <div class="min-h-screen bg-gray-100">
             <!-- Hero Section -->
             <section class="relative bg-gradient-to-br from-blue-700 to-blue-600 py-20 text-white"
                 style="background-image: url('https://img1.wsimg.com/isteam/getty/1933752815/:/cr=t:5.56%25,l:0%25,w:100%25,h:88.89%25/rs=w:1240,h:620,cg:true'); background-size: cover; background-position: center;">

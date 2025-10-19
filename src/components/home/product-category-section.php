@@ -1,76 +1,128 @@
 <?php
 // Example product data (replace with dynamic data from a database or CMS)
-$mirrorCategories = [
-    ["id" => 1, "description" => "High-quality LED mirror with adjustable brightness and anti-fog feature.", "name" => "LED Mirror", "image" => "../../assets/led_mirror.jpg"],
-    ["id" => 2, "description" => "Elegant frameless mirror perfect for bathrooms and dressing areas.", "name" => "Touch Sensor Mirror", "image" => "../../assets/frameless_mirror.png"],
-    ["id" => 3, "description" => "Stylish frontlit LED mirror with touch controls and energy-efficient lighting.", "name" => "Round Vanity Mirror", "image" => "../../assets/frontlit_led_mirror.png"],
-    ["id" => 4, "description" => "Compact vanity mirror with built-in lighting and adjustable angles.", "name" => "Smart Mirror", "image" => "../../assets/vanity_mirror.jpg"],
-];
-
-$doorCategories = [
-    ["id" => 1, "description" => "Durable aluminium door with modern aesthetics and weather resistance.", "name" => "Sliding Door", "image" => "../../assets/aluminium_doors.png"],
-    ["id" => 2, "description" => "Space-saving sliding glass door with smooth operation and stylish look.", "name" => "Folding Door", "image" => "../../assets/sliding_glass_door.jpg"],
-    ["id" => 3, "description" => "Classic hinged glass door with robust construction and elegant design.", "name" => "Glass Door", "image" => "../../assets/Hinged Glass Door.png"],
-    ["id" => 4, "description" => "Charming French door with multiple glass panels and traditional appeal.", "name" => "Aluminium Door", "image" => "../../assets/French Door.png"],
-];
-
-$showerCategories = [
-    ["id" => 1, "description" => "Tempered glass shower door with sleek design and easy installation. ", "name" => "Corner Shower", "image" => "../../assets/glass_shower_door.png"],
-    ["id" => 2, "description" => "Modern frameless shower door with minimalist look and durable build. ", "name" => "Sliding Shower", "image" => "../../assets/Frameless_Shower_Door.png"],
-    ["id" => 3, "description" => "Compact sliding shower door ideal for small bathrooms and tight spaces. ", "name" => "Frameless Shower", "image" => "../../assets/Sliding Shower Door.png"],
-    ["id" => 4, "description" => "Elegant pivot shower door with smooth operation and premium materials. ", "name" => "Custom Shower", "image" => "../../assets/Pivot Shower Door.png"],
+$categories = [
+    ["id" => 1, "description" => "Modern aluminium doors with contemporary design and superior durability for your home.", "name" => "FloraMax Aluminium Door", "image" => "/../../assets/doors/FMAD_101.png", "featute1" => "Durable & Weather Resistant", "featute2" => "Customizable Designs", "filter" => "doors"],
+    ["id" => 2, "description" => "Innovative LED mirrors with smart features and adjustable lighting for any room.", "name" => "Halosmart Mirrors", "image" => "/../../assets/led_mirrors/FSLM_201.png", "featute1" => "LED Technology", "featute2" => "Smart Controls", "filter" => "halosmart"],
+    ["id" => 3, "description" => "Elegantly designed mirrors that add sophistication and style to any interior space.", "name" => "Vista Mirrors", "image" => "/../../assets/vista_mirrors/FVM_201.png", "featute1" => "Premium Finish", "featute2" => "Easy Installation", "filter" => "vista"],
+    ["id" => 4, "description" => "High-quality glass solutions specifically designed for modern kitchen spaces and cabinets.", "name" => "Kitchen Glass", "image" => "/../../assets/kitchen/GTV_101.png", "featute1" => "Tempered Glass", "featute2" => "Heat Resistant", "filter" => "kitchen"],
 ];
 ?>
 
-<section id="products" class="min-h-screen bg-lightGrey py-24">
-    <div class="container mx-auto px-4 text-center">
-        <h1 class="text-3xl lg:text-5xl font-serif font-bold text-primary mb-10">
-            Product Categories
-        </h1>
+<section id="categories" class="py-12 sm:py-16 md:py-20 lg:py-24 bg-lightGrey">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 
-        <!-- Mirrors Section -->
-        <div class="mb-20">
-            <h2 class="text-3xl font-bold text-darkGrey">Mirrors</h2>
-            <div class="bg-darkGrey h-2 rounded-full w-30 mx-auto mb-5"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-                <?php foreach ($mirrorCategories as $product): ?>
-                    <?php
-                    $name = $product['name'];
-                    $description = $product['description'];
-                    $image = $product['image'];
-                    include __DIR__ . '/../layout/product-card.php'; ?>
-                <?php endforeach; ?>
+        <!-- Section Header -->
+        <div class="text-center mb-12 sm:mb-16 md:mb-20">
+            <!-- Label -->
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <div class="h-1 w-8 bg-primary rounded-full"></div>
+                <span class="text-primary text-sm font-semibold uppercase tracking-wider">Our Collections</span>
+                <div class="h-1 w-8 bg-primary rounded-full"></div>
             </div>
+
+            <!-- Heading -->
+            <h2
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+                Explore Our <span class="text-primary">Product Categories</span>
+            </h2>
+
+            <!-- Description -->
+            <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+                Discover our premium collection of carefully curated products, designed to elevate your living space
+                with modern elegance and superior quality.
+            </p>
         </div>
 
-        <!-- Doors Section -->
-        <div class="mb-20">
-            <h2 class="text-3xl font-bold text-darkGrey">Interior Doors</h2>
-            <div class="bg-darkGrey h-2 rounded-full w-30 mx-auto mb-5"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-                <?php foreach ($doorCategories as $product): ?>
-                    <?php
-                    $name = $product['name'];
-                    $description = $product['description'];
-                    $image = $product['image'];
-                    include __DIR__ . '/../layout/product-card.php'; ?>
-                <?php endforeach; ?>
-            </div>
+        <!-- Categories Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <?php foreach ($categories as $category): ?>
+                <div class="group cursor-pointer overflow-hidden border border-gray-200 hover:border-primary 
+    transition-all duration-300 h-full rounded-2xl shadow-sm animate-fade-in-up flex flex-col">
+
+                    <!-- Image Container -->
+                    <div class="relative overflow-hidden bg-gray-200 aspect-[3/2] mt-5">
+                        <img src="<?= $category['image'] ?>" alt="<?= $category['name'] ?>"
+                            class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-3 flex flex-col flex-grow">
+                        <!-- Title -->
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                            <?= $category['name'] ?>
+                        </h3>
+
+                        <!-- Description -->
+                        <p class="text-sm sm:text-base text-gray-600 mb-4 line-clamp-2">
+                            <?= $category['description'] ?>
+                        </p>
+
+                        <!-- Features -->
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
+                                <div class="text-primary"><i class="fa-solid fa-check"></i></div>
+                                <?= $category['featute1'] ?>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
+                                <div class="text-primary"><i class="fa-solid fa-check"></i></div>
+                                <?= $category['featute2'] ?>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="mt-auto">
+                            <?php
+                            Button('Explore', 'blue', [
+                                'onclick' => "window.location.href='/shop?category=" . $category['filter'] . "'"
+                            ]);
+                            ?>
+                        </div>
+                    </div>
+                </div>
+
+            <?php endforeach; ?>
         </div>
 
-        <!-- Showers Section -->
-        <div>
-            <h2 class="text-3xl font-bold text-darkGrey">Showers</h2>
-            <div class="bg-darkGrey h-2 rounded-full w-30 mx-auto mb-5"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-                <?php foreach ($showerCategories as $product): ?>
-                    <?php
-                    $name = $product['name'];
-                    $description = $product['description'];
-                    $image = $product['image'];
-                    include __DIR__ . '/../layout/product-card.php'; ?>
-                <?php endforeach; ?>
-            </div>
+        <!-- Call to Action -->
+        <div class="mt-12 sm:mt-16 md:mt-20 text-center">
+            <p class="text-gray-600 text-base sm:text-lg mb-6">
+                Can't find what you're looking for?
+            </p>
+            <?php
+            Button('View All Products <i class="fa-solid fa-arrow-right"></i>', 'blue', [
+                'onclick' => "window.location.href='/shop'"
+            ]);
+            ?>
+
         </div>
     </div>
+
+    <style>
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #categories>div>div:nth-child(1) {
+            animation: slideInUp 0.6s ease-out;
+        }
+
+        #categories>div>div:nth-child(2) {
+            animation: slideInUp 0.6s ease-out 0.1s both;
+        }
+
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
 </section>

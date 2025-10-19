@@ -17,11 +17,11 @@ class ProductCard
 
         ob_start();
         ?>
-        <div class="group cursor-pointer overflow-hidden border border-gray-200 hover:border-blue-500 
-                    transition-all duration-300 h-full rounded-2xl shadow-sm animate-fade-in-up"
+        <div class="group cursor-pointer overflow-hidden border border-gray-200 hover:border-primary 
+                    transition-all duration-300 h-full rounded-2xl shadow-sm animate-fade-in-up bg-white"
             style="animation-delay: <?= $delay ?>s;">
             <a href="/product/<?= $slug ?>" class="block h-full">
-                <div class="relative overflow-hidden bg-gray-200 aspect-[3/2] pt-5">
+                <div class="relative overflow-hidden bg-gray-200 aspect-[3/2] mt-5">
                     <!-- Product Image -->
                     <img src="<?= $image ?>" alt="<?= $name ?>"
                         class="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" />
