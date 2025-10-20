@@ -2,7 +2,7 @@
 
 class ProductFilters
 {
-    public static function render(string $selectedCategory, array $categories, callable $onCategoryChange = null): string
+    public static function render(string $selectedCategory, array $categories): string
     {
         ob_start();
         ?>

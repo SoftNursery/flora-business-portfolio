@@ -3,6 +3,7 @@
 return [
     [
         "id" => 1,
+        "image"=>"/../../assets/blog/1.png",
         "slug" => "design-trends-2025-the-modern-elegance-of-glass-and-aluminium",
         "title" => "Design Trends 2025: The Modern Elegance of Glass and Aluminium",
         "excerpt" => "Discover the latest trends in glass door designs that combine aesthetics with functionality for contemporary homes.",
@@ -18,13 +19,13 @@ return [
         What ties all these innovations together is a growing commitment to sustainability and smart design. Glass and aluminium are not only beautiful — they’re also recyclable, long-lasting, and energy-efficient. They support eco-conscious living without compromising on elegance. The integration of smart lighting, energy-saving mirrors, and durable glass products reflects a future where design is not just about appearance, but about responsibility and innovation. \n
 
         At Flora Glass World, we’re proud to be part of this design evolution. Our products — from aluminium glass doors to LED and vista mirrors — are crafted to bring elegance, durability, and innovation into every space. We believe that great design begins with transparency, both in material and in vision. As trends continue to evolve, one thing remains clear: the future of interior design is bright, reflective, and beautifully framed in glass.",
-        "image" => "https://picsum.photos/300/200",
         "category" => "Design Trends",
-        "author" => "Sarah Johnson",
+        "author" => "Arif Hasan",
         "date" => "March 15, 2024",
     ],
     [
         "id" => 2,
+        "image" => "/../../assets/blog/2.png",
         "slug" => "complete-guide-choosing-right-glass-aluminium-products-home",
         "title" => "A Complete Guide to Choosing the Right Glass and Aluminium Products for Your Home",
         "excerpt" => "Learn why aluminum glass doors are becoming the preferred choice for homeowners and architects alike.",
@@ -42,13 +43,13 @@ return [
         At Flora Glass World, we understand that choosing the right product is about more than appearance — it’s about creating harmony between design, comfort, and lifestyle. Each of our products is manufactured with precision and care, ensuring long-lasting performance and premium quality. Whether you’re renovating your home or designing a new space from scratch, our team can guide you toward the best solutions for your needs.\n
 
         In the end, great design is about the details — the transparency of glass, the strength of aluminium, and the subtle reflections that bring a space to life. With Flora Glass World, you’re not just choosing products; you’re choosing craftsmanship, innovation, and a touch of timeless elegance for every corner of your home.",
-        "image" => "https://picsum.photos/300/200",
         "category" => "Product Guide",
-        "author" => "Michael Chen",
+        "author" => "Nusrat Jahan",
         "date" => "March 12, 2024",
     ],
     [
         "id" => 3,
+        "image" => "/../../assets/blog/3.png",
         "slug" => "how-technology-is-transforming-modern-glass-and-aluminium-design",
         "title" => "How Technology is Transforming Modern Glass and Aluminium Design",
         "excerpt" => "Everything you need to know about Halosmart mirrors and how they can transform your daily routine.",
@@ -68,13 +69,13 @@ return [
         At Flora Glass World, technology is not just a tool — it’s part of our design philosophy. Every product we manufacture, whether it’s an LED mirror, a stove glass top, or an aluminium glass door, reflects a commitment to innovation and excellence. By embracing modern technologies, we are not only enhancing how spaces look, but also how they work and feel.\n
 
         As we move forward, the connection between design and technology will continue to grow stronger. Homes will become smarter, materials will become more efficient, and glass will remain at the heart of modern architecture. With Flora Glass World, you can experience that future today — where craftsmanship meets technology, and innovation shines through every reflection.",
-        "image" => "https://picsum.photos/300/200",
         "category" => "Technology",
-        "author" => "Emily Rodriguez",
+        "author" => "Tanvir Ahmed",
         "date" => "March 10, 2024",
     ],
     [
         "id" => 4,
+        "image" => "/../../assets/blog/4.png",
         "slug" => "caring-for-glass-and-aluminium-complete-maintenance-guide",
         "title" => "Caring for Glass and Aluminium: A Complete Maintenance Guide",
         "excerpt" => "Keep your kitchen glass looking pristine with these professional maintenance and cleaning tips.",
@@ -94,13 +95,13 @@ return [
         At Flora Glass World, we design our products with longevity in mind. Every aluminium glass door, LED mirror, vista mirror, and stove glass top is made from high-quality materials that are built to withstand everyday use. But proper maintenance is what ensures they stay as stunning as the day they were installed. With the right care, you’re not just preserving a product — you’re preserving the beauty and brilliance of your home.\n
 
         Caring for glass and aluminium doesn’t have to be complicated. A little attention, a few minutes of care, and the right cleaning routine can make all the difference. At Flora Glass World, we’re here to help you enjoy design that lasts — bright, strong, and effortlessly elegant.",
-        "image" => "https://picsum.photos/300/200",
         "category" => "Maintenance",
-        "author" => "David Thompson",
+        "author" => "Mahiya Rahman",
         "date" => "March 8, 2024",
     ],
     [
         "id" => 6,
+        "image" => "/../../assets/blog/5.png",
         "slug" => "complete-guide-installing-glass-and-aluminium-products",
         "title" => "The Complete Guide to Installing Glass and Aluminium Products",
         "excerpt" => "A step-by-step look at how professional glass door installation ensures perfect results.",
@@ -118,13 +119,13 @@ return [
         At Flora Glass World, we prioritize professional installation to complement the quality of our products. Every product we manufacture is designed for easy handling and longevity, but expert installation ensures maximum safety, durability, and aesthetic impact. Our trained technicians follow industry best practices, ensuring that every door, mirror, and glass surface is mounted with precision and care.\n
 
         In the end, installation is not just about putting a product in place — it’s about creating a foundation for years of beauty and functionality. With the right techniques and expertise, your aluminium glass doors will glide smoothly, your LED mirrors will shine perfectly, and your stove glass tops will perform flawlessly. At Flora Glass World, we make sure that every installation is as elegant and dependable as the products themselves, so your space looks and feels exactly as envisioned.",
-        "image" => "https://picsum.photos/300/200",
         "category" => "Installation",
-        "author" => "Robert Martinez",
+        "author" => "Sajid Karim",
         "date" => "March 3, 2024",
     ],
     [
         "id" => 7,
+        "image" => "/../../assets/blog/6.png",
         "slug" => "sustainability-in-glass-and-aluminium-designing-greener-future",
         "title" => "Sustainability in Glass and Aluminium: Designing a Greener Future",
         "excerpt" => "Discover how modern glass technology can help reduce energy costs while maintaining style.",
@@ -142,13 +143,13 @@ return [
         At Flora Glass World, sustainability is woven into every step of our design and production process. From sourcing eco-friendly materials to crafting products that enhance natural light and reduce energy use, we are dedicated to creating interiors that are as responsible as they are beautiful. Choosing our aluminium glass doors, LED mirrors, vista mirrors, or stove glass tops means investing not just in style and performance, but also in a healthier planet.\n
 
         By integrating sustainable practices with modern design, we are helping our clients create spaces that are bright, functional, and eco-friendly — proving that elegance and responsibility can go hand in hand.",
-        "image" => "https://picsum.photos/300/200",
         "category" => "Sustainability",
-        "author" => "Jennifer Lee",
+        "author" => "Farzana Akter",
         "date" => "February 28, 2024",
     ],
     [
         "id" => 9,
+        "image" => "/../../assets/blog/7.png",
         "slug" => "transforming-commercial-spaces-with-glass-and-aluminium-solutions",
         "title" => "Transforming Commercial Spaces with Glass and Aluminium Solutions",
         "excerpt" => "Explore how glass partitions and doors can transform commercial spaces into productive environments.",
@@ -165,13 +166,13 @@ return [
         At Flora Glass World, we understand that commercial projects have unique requirements — from durability and safety to design consistency and brand alignment. Our products are designed to withstand heavy use while maintaining their sleek appearance and functionality. Every installation, whether in a corporate office, retail space, or hospitality venue, reflects our commitment to quality, innovation, and style.\n
 
         By integrating aluminium and glass solutions into commercial spaces, businesses can create environments that are professional, inviting, and visually striking. With Flora Glass World, commercial interiors aren’t just functional — they become experiences, combining design, performance, and brand identity in a way that leaves a lasting impression.",
-        "image" => "https://picsum.photos/300/200",
         "category" => "Commercial",
-        "author" => "Patricia Brown",
+        "author" => "Rafiul Islam",
         "date" => "February 22, 2024",
     ],
     [
         "id" => 10,
+        "image" => "/../../assets/blog/8.png",
         "slug" => "glass-safety-standards-guide",
         "title" => "Glass Safety Standards: What You Need to Know",
         "excerpt" => "Understanding safety certifications and standards for glass products in residential applications.",
@@ -189,9 +190,8 @@ return [
         At Flora Glass World, our commitment to safety is as strong as our commitment to design. Every product is crafted with precision, high-quality materials, and adherence to international glass safety standards. From aluminium glass doors that combine elegance with durability, to LED mirrors and stove glass tops that bring both style and security, we ensure that your spaces are as safe as they are beautiful.\n
 
         Understanding glass safety standards is essential for anyone designing or renovating a space. By choosing products that meet these standards and ensuring proper installation, you can enjoy the elegance and openness of glass without compromise. With Flora Glass World, safety, innovation, and aesthetics go hand in hand — creating interiors that inspire confidence as well as admiration.",
-        "image" => "https://picsum.photos/300/200",
         "category" => "Safety",
-        "author" => "James Wilson",
+        "author" => "Sumaiya Chowdhury",
         "date" => "February 20, 2024",
     ]
 ];

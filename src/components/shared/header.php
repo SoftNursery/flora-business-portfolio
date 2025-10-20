@@ -18,18 +18,15 @@ $logo = '/../../assets/2.png';
                 <li><a href="/blog" class="nav-link">Blog</a></li>
             </ul>
 
-            <div class="hidden md:flex items-center gap-4">
+            <div class="hidden md:flex items-center">
                 <a class="relative bg-white text-darkGrey px-4 py-2 rounded-lg font-semibold hover:text-primary hover:bg-lightGrey transition-colors duration-300 cursor-pointer inline-flex items-center gap-2" href="/cart">
                     <p class="bg-accent w-5 h-5 rounded-full flex justify-center items-center absolute -top-1 -right-1 text-lightGrey">2</p>
                     <i class="fa-solid fa-cart-shopping"></i> Cart
                 </a>
-                <?php Button('Login', 'white', [
-                    'onclick' => "window.location.href='/login'"
-                ]) ?>
             </div>
 
             <div class="md:hidden flex items-center gap-4">
-                <a class="bg-lightGrey text-darkGrey p-[6px] rounded-full relative" href="/cart">
+                <a class="bg-lightGrey text-darkGrey w-8 h-8 flex justify-center items-center rounded-full relative" href="/cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <p class="bg-accent w-5 h-5 rounded-full flex justify-center items-center absolute -top-1 -right-1 text-lightGrey">3</p>
                 </a>
