@@ -293,7 +293,7 @@ if (!$blog) {
         </div>
 
         <!-- Navigation -->
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-8 border-t border-gray-200">
+        <div class="flex items-center justify-between gap-4 pt-8 border-t border-gray-200">
             <a href="/blog"
                 class="inline-flex items-center text-primary hover:text-primary/80 font-semibold group transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg"

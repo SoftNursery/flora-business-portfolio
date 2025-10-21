@@ -1,5 +1,6 @@
 <?php
 $testimonials = include __DIR__ . '/../../data/testimonials.php';
+$owner = 'assets/owner.png';
 ?>
 
 <style>
@@ -68,7 +69,7 @@ $testimonials = include __DIR__ . '/../../data/testimonials.php';
                             </p>
 
                             <div class="flex items-center gap-3">
-                                <img src="https://www.nijolcreative.com/wp-content/uploads/2023/04/Headshot-Photography.jpg" alt="<?php echo htmlspecialchars($testimonial['name']); ?>"
+                                <img src="<?= $owner ?>" alt="<?php echo htmlspecialchars($testimonial['name']); ?>"
                                     class="w-12 h-12 rounded-full object-cover" />
                                 <div>
                                     <p class="font-semibold text-foreground">
@@ -97,7 +98,7 @@ $testimonials = include __DIR__ . '/../../data/testimonials.php';
                             </p>
 
                             <div class="flex items-center gap-3">
-                                <img src="https://www.nijolcreative.com/wp-content/uploads/2023/04/Headshot-Photography.jpg" alt="<?php echo htmlspecialchars($testimonial['name']); ?>"
+                                <img src="<?= $owner ?>" alt="<?php echo htmlspecialchars($testimonial['name']); ?>"
                                     class="w-12 h-12 rounded-full object-cover" />
                                 <div>
                                     <p class="font-semibold text-foreground">
@@ -130,7 +131,7 @@ $testimonials = include __DIR__ . '/../../data/testimonials.php';
                             </p>
 
                             <div class="flex items-center gap-3">
-                                <img src="https://www.nijolcreative.com/wp-content/uploads/2023/04/Headshot-Photography.jpg" alt="<?php echo htmlspecialchars($testimonial['name']); ?>"
+                                <img src="<?= $owner ?>" alt="<?php echo htmlspecialchars($testimonial['name']); ?>"
                                     class="w-12 h-12 rounded-full object-cover" />
                                 <div>
                                     <p class="font-semibold text-foreground">
@@ -160,7 +161,7 @@ $testimonials = include __DIR__ . '/../../data/testimonials.php';
                             </p>
 
                             <div class="flex items-center gap-3">
-                                <img src="https://www.nijolcreative.com/wp-content/uploads/2023/04/Headshot-Photography.jpg" alt="<?php echo htmlspecialchars($testimonial['name']); ?>"
+                                <img src="<?= $owner ?>" alt="<?php echo htmlspecialchars($testimonial['name']); ?>"
                                     class="w-12 h-12 rounded-full object-cover" />
                                 <div>
                                     <p class="font-semibold text-foreground">

@@ -176,12 +176,20 @@ $total = $subtotal; // (You can later add taxes/shipping)
 
                 <!-- Page Header with Actions -->
                 <div class="mb-6 sm:mb-8 md:mb-10">
-                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-between mb-4 sm:mb-6">
+                    <div class="hidden md:flex items-center justify-between mb-4 sm:mb-6">
                         <?php Button('<i class="fas fa-arrow-left"></i>Continue Shopping', 'blue', [
                             'onclick' => "window.location.href='/shop'"
                         ]) ?>
                         <?php Button('<i class="fas fa-trash-alt mr-2"></i>Clear Cart', 'red') ?>
                     </div>
+
+                    <div class="flex md:hidden items-center justify-between mb-4 sm:mb-6">
+                        <a class="bg-primary text-lightGrey w-8 h-8 flex justify-center items-center rounded-full"
+                            href="/shop">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                    </div>
+
                     <h1 class="font-serif text-2xl sm:text-3xl md:text-4xl text-gray-900">Shopping Cart</h1>
                     <p class="text-sm sm:text-base text-gray-600 mt-2">
                         <i class="fas fa-shopping-cart mr-2"></i><?= getTotalItems($items) ?>

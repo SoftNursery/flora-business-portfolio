@@ -1,27 +1,6 @@
 <?php
-$blogs = [
-    [
-        'image' => 'assets/blog1.png',
-        'category' => 'Design Tips',
-        'title' => '5 Ways to Modernize Your Home Entrance',
-        'description' => "Discover how aluminium doors can transform your home's first impression...",
-        'link' => '#'
-    ],
-    [
-        'image' => 'assets/blog2.png',
-        'category' => 'Product Guide',
-        'title' => 'The Ultimate Guide to LED Mirror Lighting',
-        'description' => 'Learn how to choose the perfect LED mirror for your bathroom...',
-        'link' => '#'
-    ],
-    [
-        'image' => 'assets/blog3.png',
-        'category' => 'Industry News',
-        'title' => 'Why Aluminium is the Future of Sustainable Building',
-        'description' => 'Explore the environmental benefits of choosing aluminium products...',
-        'link' => '#'
-    ],
-];
+$blogs = include __DIR__ . '/../../data/blogPosts.php';
+$blogs = array_slice($blogs, 0, 3);
 ?>
 
 <section id="blog" class="py-24 bg-lightGrey">
@@ -44,20 +23,35 @@ $blogs = [
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <?php foreach ($blogs as $blog): ?>
-                <article class="bg-white rounded-lg overflow-hidden shadow-lg group">
-                    <img src="<?= $blog['image'] ?>" alt="Blog Post" class="w-full h-56 object-cover" />
+                <div
+                    class="group block hover:border bg-white shadow hover:border-primary rounded-lg overflow-hidden transition-shadow hover:shadow-lg">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="<?= $blog['image'] ?>" alt="<?= htmlspecialchars($blog['title']) ?>"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+                        <span
+                            class="absolute top-4 left-4 bg-accent px-2 py-1 text-xs text-white rounded"><?= $blog['category'] ?></span>
+                    </div>
                     <div class="p-6">
-                        <p class="text-sm text-accent font-semibold mb-2"><?= $blog['category'] ?></p>
-                        <h3
-                            class="text-xl font-serif font-bold text-primary mb-3 group-hover:text-accent transition-colors cursor-pointer">
-                            <?= $blog['title'] ?>
-                        </h3>
-                        <p class="text-[#333333] mb-4"><?= $blog['description'] ?></p>
-                        <a href="<?= $blog['link'] ?>" class="font-bold text-[#333333] hover:text-accent">
-                            Read More &rarr;
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span class="flex items-center gap-1"><i class="fa-regular fa-calendar"></i>
+                                <?= $blog['date'] ?></span>
+                            <span class="flex items-center gap-1"><i class="fa-regular fa-user"></i>
+                                <?= $blog['author'] ?></span>
+                        </div>
+                        <a href="/blog/<?= $blog['slug'] ?>"
+                            class="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors line-clamp-2">
+                            <?= htmlspecialchars($blog['title']) ?>
+                        </a>
+                        <p class="text-gray-500 leading-relaxed mb-4 line-clamp-3">
+                            <?= htmlspecialchars($blog['excerpt']) ?>
+                        </p>
+                        <a href="/blog/<?= $blog['slug'] ?>"
+                            class="flex items-center gap-2 text-primary font-semibold group-hover:text-accent transition-colors cursor-pointer">
+                            <span>Read More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
-                </article>
+                </div>
             <?php endforeach; ?>
         </div>
 

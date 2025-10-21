@@ -63,8 +63,7 @@ $cartItems = [
                 $subtotal += $item['price'] * $item['quantity'];
             }
             $shippingCost = 15.00;
-            $tax = $subtotal * 0.10;
-            $finalTotal = $subtotal + $shippingCost + $tax;
+            $finalTotal = $subtotal + $shippingCost;
             ?>
 
             <div class="space-y-2">
@@ -75,10 +74,6 @@ $cartItems = [
                 <div class="flex justify-between text-sm">
                     <span class="text-gray-500">Shipping</span>
                     <span>$<?= number_format($shippingCost, 2) ?></span>
-                </div>
-                <div class="flex justify-between text-sm">
-                    <span class="text-gray-500">Tax (10%)</span>
-                    <span>$<?= number_format($tax, 2) ?></span>
                 </div>
             </div>
 

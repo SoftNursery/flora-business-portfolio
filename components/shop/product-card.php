@@ -20,7 +20,7 @@ class ProductCard
         <div class="group cursor-pointer overflow-hidden border border-gray-200 hover:border-primary 
                     transition-all duration-300 h-full rounded-2xl shadow-sm animate-fade-in-up bg-white"
             style="animation-delay: <?= $delay ?>s;">
-            <a href="/product/<?= $slug ?>" class="block h-full">
+            <div class="block h-full">
                 <div class="relative overflow-hidden bg-gray-200 aspect-[3/2] mt-5">
                     <!-- Product Image -->
                     <img src="<?= $image ?>" alt="<?= $name ?>"
@@ -33,35 +33,26 @@ class ProductCard
                             <?= htmlspecialchars($badge) ?>
                         </span>
                     <?php endif; ?>
-
-                    <!-- Hover Overlay -->
-                    <div class="absolute inset-0 flex items-center justify-center bg-primary/10 opacity-0 
-                                group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="bg-primary text-lightGrey rounded-full p-3 transform scale-90 opacity-0 
-                                    group-hover:scale-100 group-hover:opacity-100 transition-all duration-300">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Product Info -->
                 <div class="p-6">
                     <p class="text-xs uppercase tracking-wider text-gray-500 mb-2"><?= $category ?></p>
-                    <h3 class="font-serif text-xl mb-2 text-darkGrey group-hover:text-primary transition-colors duration-300">
+                    <a href="/product/<?= $slug ?>" class="font-serif text-xl mb-2 text-darkGrey group-hover:text-primary transition-colors duration-300">
                         <?= $name ?>
-                    </h3>
+                    </a>
                     <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-2">
                         <?= $description ?>
                     </p>
                     <div class="flex items-center justify-between">
                         <p class="text-2xl font-semibold text-primary">$<?= $price ?></p>
-                        <div class="flex items-center gap-1 text-sm font-medium text-accent transform 
+                        <a href="/product/<?= $slug ?>" class="flex items-center gap-1 text-sm font-medium text-accent transform 
                                     transition-transform duration-200 group-hover:translate-x-1">
                             View Details ➜
-                        </div>
+                        </a>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
         <?php
         return ob_get_clean();

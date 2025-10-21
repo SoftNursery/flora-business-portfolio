@@ -87,12 +87,15 @@ if (!$product) {
         <section class="min-h-screen py-16 bg-gradient-to-b from-gray-50 to-white">
             <div class="container mx-auto px-4 md:px-6">
                 <!-- Navigation -->
-                <div class="mb-12">
+                <div class="mb-12 hidden md:block">
                     <?php Button('<i class="fa-solid fa-arrow-left mr-2"></i> Back to Shop', 'blue', [
                         'onclick' => "window.location.href='/shop'",
                         'class' => 'inline-flex items-center'
                     ]) ?>
                 </div>
+                <a class="bg-primary text-lightGrey w-8 h-8 flex justify-center items-center rounded-full" href="/shop">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
 
                 <!-- Product Layout -->
                 <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">

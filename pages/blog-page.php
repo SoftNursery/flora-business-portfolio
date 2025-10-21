@@ -143,7 +143,7 @@ $categories = array_unique(array_map(fn($p) => $p['category'], $blogPosts));
                         <?php else: ?>
                             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 animate-slide-up">
                                 <?php foreach ($currentPosts as $post): ?>
-                                    <a href="/blog/<?= $post['slug'] ?>"
+                                    <div
                                         class="group block hover:border bg-white shadow hover:border-primary rounded-lg overflow-hidden transition-shadow hover:shadow-lg">
                                         <div class="relative h-48 overflow-hidden">
                                             <img src="<?= $post['image'] ?>" alt="<?= htmlspecialchars($post['title']) ?>"
@@ -158,20 +158,20 @@ $categories = array_unique(array_map(fn($p) => $p['category'], $blogPosts));
                                                 <span class="flex items-center gap-1"><i class="fa-regular fa-user"></i>
                                                     <?= $post['author'] ?></span>
                                             </div>
-                                            <h3
+                                            <a href="/blog/<?= $post['slug'] ?>"
                                                 class="text-xl font-bold text-primary mb-3 group-hover:text-accent transition-colors line-clamp-2">
                                                 <?= htmlspecialchars($post['title']) ?>
-                                            </h3>
+                                            </a>
                                             <p class="text-gray-500 leading-relaxed mb-4 line-clamp-3">
                                                 <?= htmlspecialchars($post['excerpt']) ?>
                                             </p>
-                                            <div
-                                                class="flex items-center gap-2 text-primary font-semibold group-hover:text-accent transition-colors">
+                                            <a href="/blog/<?= $post['slug'] ?>"
+                                                class="flex items-center gap-2 text-primary font-semibold group-hover:text-accent transition-colors cursor-pointer">
                                                 <span>Read More</span>
                                                 <i class="fa-solid fa-arrow-right"></i>
-                                            </div>
+                                            </a>
                                         </div>
-                                    </a>
+                                    </div>
                                 <?php endforeach; ?>
                             </div>
 
