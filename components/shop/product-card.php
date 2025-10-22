@@ -45,7 +45,7 @@ class ProductCard
                         <?= $description ?>
                     </p>
                     <div class="flex items-center justify-between">
-                        <p class="text-2xl font-semibold text-primary">$<?= $price ?></p>
+                        <p class="text-2xl font-semibold text-primary">৳<?= $price ?></p>
                         <a href="/product/<?= $slug ?>" class="flex items-center gap-1 text-sm font-medium text-accent transform 
                                     transition-transform duration-200 group-hover:translate-x-1">
                             View Details ➜

@@ -1,5 +1,5 @@
 <?php
-$softNurseryLogo = 'assets/softnursery.png';
+$softNurseryLogo = '/assets/softnursery.png';
 ?>
 
 <footer class="bg-primary text-white">

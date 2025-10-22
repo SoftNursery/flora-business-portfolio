@@ -93,7 +93,7 @@ if (!$product) {
                         'class' => 'inline-flex items-center'
                     ]) ?>
                 </div>
-                <a class="bg-primary text-lightGrey w-8 h-8 flex justify-center items-center rounded-full" href="/shop">
+                <a class="md:hidden mb-12 bg-primary text-lightGrey w-8 h-8 flex justify-center items-center rounded-full" href="/shop">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
 
@@ -130,7 +130,7 @@ if (!$product) {
                             </h1>
                             <div class="flex items-baseline gap-4 pb-6 border-b border-gray-200">
                                 <span class="text-4xl font-bold text-primary">
-                                    $<?= number_format($product['price'], 2) ?>
+                                    ৳<?= number_format($product['price'], 2) ?>
                                 </span>
                                 <span class="text-sm text-gray-500">In stock</span>
                             </div>

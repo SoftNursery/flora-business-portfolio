@@ -14,8 +14,8 @@ $logo = '/../../assets/2.png';
                 <li><a href="/" class="nav-link">Home</a></li>
                 <li><a href="/shop" class="nav-link">Shop</a></li>
                 <li><a href="/about" class="nav-link">About</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
                 <li><a href="/blog" class="nav-link">Blog</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
 
             <div class="hidden md:flex items-center">
@@ -44,8 +44,8 @@ $logo = '/../../assets/2.png';
                 <li><a href="/" class="block hover:text-[#F8F9FB]">Home</a></li>
                 <li><a href="/shop" class="block hover:text-[#F8F9FB]">Shop</a></li>
                 <li><a href="/about" class="block hover:text-[#F8F9FB]">About</a></li>
-                <li><a href="/contact" class="block hover:text-[#F8F9FB]">Contact</a></li>
                 <li><a href="/blog" class="block hover:text-[#F8F9FB]">Blog</a></li>
+                <li><a href="/contact" class="block hover:text-[#F8F9FB]">Contact</a></li>
             </ul>
         </div>
     </nav>

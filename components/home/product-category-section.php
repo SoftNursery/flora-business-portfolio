@@ -48,7 +48,8 @@ $categories = [
                     <!-- Content -->
                     <div class="p-3 flex flex-col flex-grow">
                         <!-- Title -->
-                        <h3 class="text-lg sm:text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                        <h3
+                            class="text-lg sm:text-xl font-bold mb-2 text-primary group-hover:text-accent transition-colors">
                             <?= $category['name'] ?>
                         </h3>
 
@@ -88,12 +89,10 @@ $categories = [
             <p class="text-gray-600 text-base sm:text-lg mb-6">
                 Can't find what you're looking for?
             </p>
-            <?php
-            Button('View All Products <i class="fa-solid fa-arrow-right"></i>', 'blue', [
-                'onclick' => "window.location.href='/shop'"
-            ]);
-            ?>
-
+            <a href="/shop"
+                class="bg-primary text-lightGrey px-5 py-2 rounded-lg font-semibold hover:bg-primary/90 transition-colors duration-300 cursor-pointer inline-flex items-center gap-2">View
+                All Products <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
     </div>
 

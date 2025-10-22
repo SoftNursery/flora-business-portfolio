@@ -55,7 +55,7 @@
 
                 <!-- CTA Button -->
                 <button onclick="window.location.href='/shop'"
-                    class="cursor-pointer px-6 sm:px-8 py-2.5 sm:py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base inline-flex items-center gap-2 group">
+                    class="cursor-pointer px-6 sm:px-8 py-2.5 sm:py-3 bg-primary hover:bg-accent text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base inline-flex items-center gap-2 group">
                     Go to Shop
                     <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
